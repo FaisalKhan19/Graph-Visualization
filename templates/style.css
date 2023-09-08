@@ -1,0 +1,93 @@
+/* Define the CSS styles for the graph */
+.info-title,
+.info-footer,
+.info-paths {
+    color: rgb(0, 0, 0); /* Text color for info sections */
+    font-size: 16px; /* Font size for info sections */
+}
+
+.info-footer {
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+#total-flow {
+    margin-bottom: 10px; /* Add some margin to the total flow */
+}
+
+.info-main {
+    width: 200px; /* Wider info main section */
+    padding: 15px;
+    background-color: rgb(220, 220, 220); /* Lighter background color */
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: flex-start; /* Align content to the top */
+    height: 400px;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the top */
+    height: 100vh; /* This ensures the content takes up the full viewport height */
+    padding: 10px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center;
+    height: 100%; /* This ensures the content takes up the full viewport height */
+}
+
+.button-container,
+.svg-container {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+body {
+    align-items: center;
+    text-align: center;
+}
+
+svg {
+    background-color: rgb(245, 245, 245); /* Light gray background color */
+    width: 100%; /* Make the SVG container responsive */
+    height: 400px; /* Set a maximum height for the SVG container */
+    text-align: center;
+}
+
+.node {
+    fill: #4CAF50; /* Green fill for nodes */
+    stroke: #000;
+    stroke-width: 1px; /* Thinner stroke for nodes */
+}
+
+.edge {
+    stroke: #2196F3; /* Blue stroke for edges */
+    fill: none;
+    stroke-width: 2px; /* Wider stroke for edges */
+}
+
+.edge-arrow {
+    fill: #9E9E9E; /* Gray fill for edge arrows */
+}
+
+.node-text {
+    font-family: Arial, sans-serif;
+    font-size: 14px; /* Smaller font size for node text */
+    text-anchor: middle;
+    dominant-baseline: central;
+    fill: #000; /* Black text color for node text */
+}
+
+.edge-text {
+    font-family: Arial, sans-serif;
+    font-size: 12px; /* Smaller font size for edge text */
+    text-anchor: middle;
+    dominant-baseline: central;
+    fill: #333; /* Dark gray text color for edge text */
+}
